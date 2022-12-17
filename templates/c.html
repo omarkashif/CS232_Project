@@ -1,0 +1,37 @@
+{% extends 'index.html' %} 
+{% block title %}Contact{% endblock title %}
+
+{% block body %}
+
+<h1
+        style="font-size: 75px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-top: -20px;margin-bottom: -10px ; margin-left: 10px;">
+        Contact Us</h1>
+    <h3 class="my-3"
+        style="margin-left:15px ; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; font-size: 32px;">Topi
+        23640,<br>
+        GIKI, Pakistan.</h3>
+    <div style="margin: auto;">
+        <a href="https://www.facebook.com/profile.php?id=100069125231572"><img src="static/facebook.jpeg"
+                style="margin-left: -20px;" width="21%"></a>
+        <a href="https://www.instagram.com/omarkashif03/"><img src="static/instagram.jpeg" width="14%"
+                style="margin-right: 60px;"></a>
+        <a href="https://twitter.com/omarkashif03"><img src="static/twitter.jpeg" width="14%" style="margin-right: 30px;"></a>
+        <a href="https://www.youtube.com/"><img src="static/youtube.jpeg" width="22%" style="margin-right: 60px;"></a>
+        <a href="mailto:omarkashificty8@gmail.com"><img src="static/email.png" width="14%"></a>
+    </div>
+    <script>
+
+        window.onscroll = function () {
+            scrolldown()
+        };
+
+        function scrolldown() {
+            if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+                document.getElementById("top").style.top = "0";
+            }
+            else {
+                document.getElementById("top").style.top = "-50px";
+            }
+        }
+    </script>
+{% endblock body %}

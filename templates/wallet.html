@@ -1,0 +1,36 @@
+{% extends 'index.html' %} 
+{% block title %}Wallet{% endblock title %}
+
+{% block body %}
+<div class="flex-container" style="display:flex">
+    <div style="width:40%"><img src="static/wall.jpg" alt="..." class="img-thumbnail mx-5" width="70%"></div>
+    <div>
+        <span class="a-size-large product-title-word-break" style="font-size:50px;"> Wildhorn Leather Hand-Crafted
+            Wallet
+        </span>
+        <ul class="a-unordered-list a-vertical a-spacing-mini my-3" style="font-size:22px;">
+            <li><span class="a-list-item"> This is a high-quality classic genuine leather wallet from wildhorn.
+                </span></li>
+            <li><span class="a-list-item"> This wallet act as a perfect accesory to complete your look and make you
+                    stand out. </span>
+            </li>
+            <li><span class="a-list-item"> Featuring an elegant design,hsnd stitched and aged this wallet is long
+                    lasting </span></li>
+            <li><span class="a-list-item"> This has made out of top grain and pure leather and its a natural thing
+                    where color variation in never under control </span></li>
+            <li><span class="a-list-item"> Pure leather wallets gets more beautiful on ageing
+                </span></li>
+        </ul>
+        <span class="a-size-large product-title-word-break" style="font-size:50px;"> $39.09
+        </span>
+        <hr>
+        <p>Qty:
+        <select name="quantity" autocomplete="off" id="quantity" tabindex="0" data-action="a-dropdown-select" class="a-native-dropdown a-declarative">     <option value="1" selected="">1 </option>       <option value="2">2 </option>       <option value="3">3 </option>       <option value="4">4 </option>       <option value="5">5 </option>       <option value="6">6 </option>       <option value="7">7 </option>       <option value="8">8 </option>       <option value="9">9 </option>       <option value="10">10 </option> </select></p>
+        <button type="button" class="btn btn-warning">Add to Cart</button>
+        <a href="/BuyNow"> <button type="button" class="btn btn-info">Buy Now!</button></a>
+    </div>
+</div>
+    
+
+
+{% endblock body %}
