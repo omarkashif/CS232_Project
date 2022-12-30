@@ -20,10 +20,17 @@
         <span class="a-size-large product-title-word-break" style="font-size:50px;"> $129.99
         </span>
         <hr>
-        <button type="button" class="btn btn-warning">Add to Cart</button>
-        <a href="/BuyNow"> <button type="button" class="btn btn-info">Buy Now!</button></a>
+       
+        <form class="mx-3" method="post" action="/Watch">
+            <form class="mx-3" method="post" action="/BuyNow">
+            <button data-product=1 data-action="add" type="button"  class="btn btn-warning add-btn update-cart">Add to Cart</button>
+            <a href="/BuyNow"> <button type="button" class="btn btn-info">Buy Now!</button></a>
+        </form>
     </div>
 </div>
+
+
+
 
 
 {% endblock body %}
